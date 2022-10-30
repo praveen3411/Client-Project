@@ -13,6 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { BsFillAwardFill } from "react-icons/bs";
 import { Link, NavLink } from "react-router-dom";
+
 import "../css/Navbar.css";
 import { MainPages, one, Settings, two } from "../Resuable/ReusableNavbar";
 export default function ResponsiveNavbar() {
@@ -44,6 +45,7 @@ export default function ResponsiveNavbar() {
           <Link to={"/"}>
             <BsFillAwardFill
               color="white"
+              style={{ marginLeft: "20px", marginRight: "30px" }}
               sx={{ display: { xs: "none", md: "flex", ml: "10px" }, mr: 1 }}
             />
           </Link>
@@ -56,7 +58,7 @@ export default function ResponsiveNavbar() {
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".2rem",
               color: "inherit",
               textDecoration: "none",
             }}

@@ -1,3 +1,23 @@
-.css-hip9hq-MuiPaper-root-MuiAppBar-root{
-    background-color: rgb(109, 200, 252) !important;
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: rgb(0, 191, 255) !important;
+}
+.products {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto auto auto auto auto;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 700px) { 
+  .products {
+    margin-left: 80px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
 }

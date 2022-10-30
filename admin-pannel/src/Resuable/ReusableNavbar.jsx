@@ -32,7 +32,7 @@ export const Settings = [
   },
 ];
 export const one = {
-  color: "pink",
+  color: "black",
   textDecoration: "none",
   ontsize: "20px",
 };
