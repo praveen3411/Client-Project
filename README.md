@@ -1,6 +1,6 @@
-# CLIENT-PROJECT
+# CLIENT-PROJECT-REQRUIRMENT
 
-Creating Admin panel using protected routes and working on Ui components
+Simple E-commerce-site & Admin-Pannel Build using React.js, Redux & more Libraries.
 [website-Deplyment-Link](https://praveenkumar-client-site-praveen3411.vercel.app/)
 
 ## User-Login-credentials
@@ -163,6 +163,5 @@ Creating Admin panel using protected routes and working on Ui components
 9. Assets Folder
 
 - Assests Folder Contains Images
-
 
 ------------------------------------**💫 END 💫**------------------------------------
