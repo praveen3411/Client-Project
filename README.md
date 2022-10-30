@@ -61,4 +61,5 @@ Creating Admin panel using protected routes and working on Ui components
   - App.js
 
 ## HOME-PAGE
-[HOME-PAGE](https://github.com/praveen3411/Client-Project/blob/main/admin-pannel/src/assets/Homepage.png)
+
+![HOME-PAGE](https://github.com/praveen3411/Client-Project/blob/4612afd542e1c06c44121ec3a2b46f0f5f7fa8d0/admin-pannel/src/assets/Homepage.png)
