@@ -7,6 +7,7 @@ import LoginPage from "../Components/Login";
 import LogOut from "../Components/Logout";
 import PageNotFound from "../Components/PageNotfound";
 import Products from "../Components/Products";
+import RequriedAuth from "../private/ProtectedRoute";
 import MainNavbar from "./Nav";
 
 export default function AllRotes() {
@@ -16,7 +17,14 @@ export default function AllRotes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path="/dashboard" element={<DashBoard />} />
+        <Route
+          path="/dashboard"
+          element={
+            <RequriedAuth>
+              <DashBoard />
+            </RequriedAuth>
+          }
+        />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/logout" element={<LogOut />} />
         <Route path="/products" element={<Products />} />
