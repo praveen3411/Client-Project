@@ -13,7 +13,4 @@ export default function ErrorAlert() {
   );
 }
 
-// {
-//   "email": "eve.holt@reqres.in",
-//   "password": "cityslicka"
-// }
+
