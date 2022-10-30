@@ -96,3 +96,73 @@ Creating Admin panel using protected routes and working on Ui components
 ![BLOG-PAGE](https://github.com/praveen3411/Client-Project/blob/4612afd542e1c06c44121ec3a2b46f0f5f7fa8d0/admin-pannel/src/assets/Blogpage.png)
 
 - Home page is a static page and Responsive page Which contains Navbar and Routes
+
+## Code TransFrom
+
+**Steps To UnderStand Code**
+
+1. App.js File
+
+- App is wrapped with AllRoutes Components & Meterial Ui
+- AllRoutes Components will Accect all components and makes a single page Application
+
+2. Routes Folder
+
+- Route Foder contains Two pages
+  - AllRoutes.jsx Which will accepts all the components and also it takes `Nav.jsx` wrapped to Routes for providing each and every page. and these will take `app.js` page.
+  - Nav.jsx will import's the `ResponsiveNavbar.jsx` from `../Features/NavbarComponent`.
+
+3. Resuable Folder
+
+- Resuable Folder contains Two Files
+  - `Error.jsx` is a error file which will through's a error when user does't exists.
+  - `ResuableNavbar.jsx` contains Array of Route Links & Some of Data was exported.
+
+4. Redux Folder
+
+- Redux Contains UserData to Manage the State.
+  - `store.jsx` which can contains the Store which wraps all the data into it. Whenever Dispatch will dispacth a action it will move to reducers and got to centralized store and it will trigger and update's to view
+  - `store.jsx` has Redux-Thunk will will retun a function instead of plain action object and perfroms the API's Calls.
+- UserAuth Contains Theree Files
+
+  - `Auth.action.types.js` which will declares the types for actions
+  - `Auth.reudcer.js` which will perform the state management based on action's and updates to store
+  - `Auth.action.js` which will retrun a API's calls and payload to reducer's and reducer will take and update's to store, Store will updates to subscriber, subscriber will updates to View model
+
+5. Private Folder
+
+- Private Folder having one Protected Router || Middleware
+  - `ProtectedRoute.jsx` will protect based on the given logic once the logic is successful it will redirect to that particular pages till that time it is in `unmount` Phase
+
+6. Features Folder
+
+- Features Folder contains These Components
+
+  - `NavbarComponent.jsx` Which is having Whole-Navbar-Page-Code and export to Components Folder.
+  - `DashBoard.jsx`Which is having Whole-DashBoard-Page-Code and export to Components Folder.
+  - `Slider.jsx` Which is having Whole-Slider-Page-Code and export to Components Folder.
+  - `SearchBar.jsx` which is implementd and map to particualr Data and take's one more component `SearBarLogic.jsx`
+  - `ProductsData.jsx` having card and `props` and exports to Components Folder
+
+7. Css Folder
+
+- Css Folder contains Two Files
+  - `Dashboard.css` Develops css proprities for `DashBoard.jsx` Page
+  - `Navbar.css` Develops css proprities for `Navbar.jsx` Page
+
+8. Components Folder
+
+- Components Folder Contains These Components
+  - `Home.jsx` page contains Home Content.
+  - `Product.jsx` Page fetches the data from Api and takes a `Productsdaa.jsx` component card to map and display data.
+  - `Login.jsx` Page contains Dispacther To dispatch and action using `useSelector,useDispatch` and based on logic it will perform.
+  - `Dashboard.jsx` will takes the component from `../Features/Dashboard` and displays the data.
+  - `Blog.jsx`page contains Blog Content.
+  - `PageNotfound.jsx` will gives the pagenot found page, when you are trying to access unknown page.
+
+9. Assets Folder
+
+- Assests Folder Contains Images
+
+
+------------------------------------**💫 END 💫**------------------------------------
