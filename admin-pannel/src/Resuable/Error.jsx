@@ -1,9 +1,19 @@
-import { Alert, Box } from "@mui/material";
+import { Alert, AlertTitle, Box } from "@mui/material";
 
 export default function ErrorAlert() {
   return (
-    <Box>
-      <Alert severity="error">This is an error alert — check it out!</Alert>
+    <Box margin="auto" width="400px">
+      <br />
+      <br />
+      <Alert severity="error">
+        <AlertTitle>Error with Credentials</AlertTitle>
+        <strong>Provide Correct Credentials!</strong>
+      </Alert>
     </Box>
   );
 }
+
+// {
+//   "email": "eve.holt@reqres.in",
+//   "password": "cityslicka"
+// }

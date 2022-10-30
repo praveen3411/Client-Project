@@ -1,26 +1,34 @@
+import { Box } from "@mui/system";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { AuthLogin } from "../Redux/UserAuth/Auth.action";
-
+import ErrorAlert from "../Resuable/Error";
 export default function LoginPage() {
-  // let authdata = useSelector((store) => store.auth.isSucccess);
   const [email, seteamil] = useState("");
   const [password, setpassword] = useState("");
-
+  const [Alert, SetAlert] = useState(false);
   let navigate = useNavigate();
   const dispatch = useDispatch();
   let location = useLocation();
   let takingdata = location.state?.data || "/dashboard";
+  let hel = () => {
+    SetAlert(true);
+  };
   let handleSubmit = (event) => {
     event.preventDefault();
-    if (email && password) {
-      dispatch(AuthLogin({ email, password })).then((result) => {
-        navigate(takingdata, { replace: true });
-      });
-    }
+    dispatch(AuthLogin({ email, password })).then((result) => {
+      if (email === "eve.holt@reqres.in" && password === "cityslicka") {
+        SetAlert(true);
+      } else {
+        SetAlert(false);
+        alert("INVALID CREDENTIALS 👋🏻");
+      }
+      navigate(takingdata, { replace: true });
+      SetAlert(true);
+    });
   };
   return (
     <div>
@@ -60,9 +68,23 @@ export default function LoginPage() {
             }}
             type={"submit"}
             value={"LOGIN"}
+            onClick={hel}
           />
         </form>
       </FormWrapper>
+      {/* <Box>{Alert === true ? <ErrorAlert /> : null}</Box> */}
+      <br />
+      <br />
+      <center>
+        <h3>Login using Request-Response Api</h3>
+      </center>
+      <br />
+      <center>
+        <ul>
+          <li>Email: eve.holt@reqres.in</li>
+          <li>Password: cityslicka</li>
+        </ul>
+      </center>
     </div>
   );
 }
