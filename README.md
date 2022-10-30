@@ -63,3 +63,36 @@ Creating Admin panel using protected routes and working on Ui components
 ## HOME-PAGE
 
 ![HOME-PAGE](https://github.com/praveen3411/Client-Project/blob/4612afd542e1c06c44121ec3a2b46f0f5f7fa8d0/admin-pannel/src/assets/Homepage.png)
+
+- Home page is a static page and Responsive page Which contains Navbar and Routes
+
+## PRODUCTS-PAGE
+
+![PRODUCTS-PAGE](https://github.com/praveen3411/Client-Project/blob/4612afd542e1c06c44121ec3a2b46f0f5f7fa8d0/admin-pannel/src/assets/Productspage.png)
+
+- This Page Which contains Products you can able to view and buy
+
+## LOGIN-PAGE
+
+![LOGIN-PAGE](https://github.com/praveen3411/Client-Project/blob/4612afd542e1c06c44121ec3a2b46f0f5f7fa8d0/admin-pannel/src/assets/Loginpage.png)
+
+1. Login Page is Fully protected with Requrest-Response API.
+2. Login Page Contains The protectd Routes `Higher Order Component`
+3. User must provide E-Mail and Password To access the dashBoard Page if not it will Redirected To login page untill user credentials.
+4. Once the user Login it will automatically redirected to DashBoardPage.
+
+## DASHBOARD-PAGE
+
+![DASHBOARD-PAGE](https://github.com/praveen3411/Client-Project/blob/4612afd542e1c06c44121ec3a2b46f0f5f7fa8d0/admin-pannel/src/assets/DashBoardpage.png)
+![DASHBOARD-PAGE](https://github.com/praveen3411/Client-Project/blob/4612afd542e1c06c44121ec3a2b46f0f5f7fa8d0/admin-pannel/src/assets/DashBoard2.png)
+
+1. Once AdminLogin He can see the DashBoard Page and he can access all the functionalities inside it
+2. DashBoard which can Contain `Profile`, `History`, `My-Account`, `Documents`, `Payment-Details`, `Products-list`.
+3. Admin can add multiple Items to site like `Clothes`, `Drinks`, `Electronics`, `Jwellery's` & `Cosmotics`
+4. We can able to see Carousel in admin pannel and SearchBar.
+
+## BLOG-PAGE
+
+![BLOG-PAGE](https://github.com/praveen3411/Client-Project/blob/4612afd542e1c06c44121ec3a2b46f0f5f7fa8d0/admin-pannel/src/assets/Blogpage.png)
+
+- Home page is a static page and Responsive page Which contains Navbar and Routes
